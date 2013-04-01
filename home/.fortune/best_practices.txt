@@ -215,44 +215,57 @@ Agile Manifesto_____________
     While there is value in the items on the right, we value the items on the
     left more.
 %
-  Our highest priority is to satisfy the customer through early and continuous
-  delivery of valuable software.  -- Agile Manifesto
+Our highest priority is to satisfy the customer through early and continuous
+delivery of valuable software.  -- Agile Manifesto
 %
-  Welcome changing requirements, even late in development. Agile processes
-  harness change for the customer's competitive advantage.  -- Agile Manifesto
+Welcome changing requirements, even late in development. Agile processes
+harness change for the customer's competitive advantage.  -- Agile Manifesto
 %
-  Deliver working software frequently, from a couple of weeks to a couple of
-  months, with a preference to the shorter timescale.  -- Agile Manifesto
+Deliver working software frequently, from a couple of weeks to a couple of
+months, with a preference to the shorter timescale.  -- Agile Manifesto
 %
-  Business people and developers must work together daily throughout the
-  project.  -- Agile Manifesto
+Business people and developers must work together daily throughout the
+project.  -- Agile Manifesto
 %
-  Build projects around motivated individuals. Give them the environment and
-  support they need, and trust them to get the job done.  -- Agile Manifesto
+Build projects around motivated individuals. Give them the environment and
+support they need, and trust them to get the job done.  -- Agile Manifesto
 %
-  The most efficient and effective method of conveying information to and within
-  a development team is face-to-face conversation.  -- Agile Manifesto
+The most efficient and effective method of conveying information to and within
+a development team is face-to-face conversation.  -- Agile Manifesto
 %
-  Working software is the primary measure of progress.
+Working software is the primary measure of progress.
 %
-  Agile processes promote sustainable development. The sponsors, developers, and
-  users should be able to maintain a constant pace indefinitely.  -- Agile Manifesto
+Agile processes promote sustainable development. The sponsors, developers, and
+users should be able to maintain a constant pace indefinitely.  -- Agile Manifesto
 %
-  Continuous attention to technical excellence and good design enhances agility.  -- Agile Manifesto
+Continuous attention to technical excellence and good design enhances agility.  -- Agile Manifesto
 %
-  Simplicity--the art of maximizing the amount of work not done--is essential.
+Simplicity--the art of maximizing the amount of work not done--is essential.
 %
-  The best architectures, requirements, and designs emerge from self-
-  organizing teams.
+The best architectures, requirements, and designs emerge from self-organizing teams.
 %
-  At regular intervals, the team reflects on how to become more effective, then
-  tunes and adjusts its behavior accordingly.  -- Agile Manifesto
+At regular intervals, the team reflects on how to become more effective, then
+tunes and adjusts its behavior accordingly.  -- Agile Manifesto
 %
-  "When you don't create things, you become defined by your tastes rather than
-  ability. Your tastes only narrow and exclude people. So create." -- why the lucky stiff
+"When you don't create things, you become defined by your tastes rather than
+ability. Your tastes only narrow and exclude people. So create." -- why the lucky stiff
 %
-  Don't just operate, create!
+Don't just operate, create!
 %
-  A good question is never answered. It is not a bolt to be tightened into
-  place but a seed to be planted and to bear more seed toward the hope of
-  greening the landscape of idea.  —- John Ciardi
+A good question is never answered. It is not a bolt to be tightened into
+place but a seed to be planted and to bear more seed toward the hope of
+greening the landscape of idea.  —- John Ciardi
+%
+Accept that you have no idea how this will grow...
+
+The key is to acknowledge from the start that you have no idea how this will
+grow. When you accept that you don't know everything, you begin to design the
+system defensively... You should spend most of your time thinking about
+interfaces rather than implementations.  -- Nicholas Zakas, author
+'High-performance JavaScript websites'
+%
+Avoid mixing object creation with application logic. -- Misko Hevery
+%
+"Plans are worthless, planning is invaluable."- Sir Winston Churchill
+%
+Your architecture should resemble your domain. -- Uncle Bob Martin, "Screaming Architecture"
