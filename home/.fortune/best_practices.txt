@@ -1,0 +1,258 @@
+Strive to make code read like comments; Strive to make comments executable.
+%
+Strengths lead to weaknesses.
+--Ari Weinzweig, lapsed anarchist and founder of Zingerman's
+%
+A great VISION is inspiring, sound, documented and communicated.
+--Ari Weinzweig, lapsed anarchist and founder of Zingerman's
+%
+Winners to what others know they should do, but often don't.
+--Ari Weinzweig, lapsed anarchist and founder of Zingerman's
+%
+To get to greatness you've got to keep getting better. All the time!
+--Ari Weinzweig, lapsed anarchist and founder of Zingerman's
+%
+Success means you get better problems.
+--Ari Weinzweig, lapsed anarchist and founder of Zingerman's
+%
+It takes longer than you think to make something great happen.
+--Ari Weinzweig, lapsed anarchist and founder of Zingerman's
+%
+Be economical with your code: make each line count.
+%
+Small is beautiful.
+%
+Make each program do one thing well. To do a new job, build afresh rather than
+complicate old programs by adding new features
+--Doug McIlroy, the inventor of Unix pipes
+%
+Expect the output of every program to become the input to another, as yet
+unknown, program. Don't clutter output with extraneous information. Avoid
+stringently columnar or binary input formats. Don't insist on interactive
+input.
+--Doug McIlroy, the inventor of Unix pipes
+%
+Design and build software, even operating systems, to be tried early,
+ideally within weeks. Don't hesitate to throw away the clumsy parts and
+rebuild them.
+--Doug McIlroy, the inventor of Unix pipes
+%
+Use tools in preference to unskilled help to lighten a programming task, even
+if you have to detour to build the tools and expect to throw some of them out
+after you've finished using them.
+--Doug McIlroy, the inventor of Unix pipes
+%
+This is the Unix philosophy: Write programs that do one thing and do it well.
+Write programs to work together. Write programs to handle text streams, because
+that is a universal interface.
+--Doug McIlroy, the inventor of Unix pipes
+%
+Rule 1. You can't tell where a program is going to spend its time. Bottlenecks
+occur in surprising places, so don't try to second guess and put in a speed hack
+until you've proven that's where the bottleneck is.
+--Rob Pike, Notes on C programming.
+%
+Rule 2. Measure. Don't tune for speed until you've measured, and even then don't
+unless one part of the code overwhelms the rest.
+--Rob Pike, Notes on C programming.
+%
+Rule 3. Fancy algorithms are slow when n is small, and n is usually small. Fancy
+algorithms have big constants. Until you know that n is frequently going to be
+big, don't get fancy. (Even if n does get big, use Rule 2 first.)
+--Rob Pike, Notes on C programming.
+%
+Rule 4. Fancy algorithms are buggier than simple ones, and they're much harder
+to implement. Use simple algorithms as well as simple data structures.
+--Rob Pike, Notes on C programming.
+%
+Rule 5. Data dominates. If you've chosen the right data structures and organized
+things well, the algorithms will almost always be self-evident. Data structures,
+not algorithms, are central to programming.
+--Rob Pike, Notes on C programming.
+%
+Rule 6. There is no Rule 6.
+--Rob Pike, Notes on C programming.
+%
+When in doubt, use brute force.
+--Ken Thompson, designer and implementer of the first UNIX
+%
+Rule of Modularity: Write simple parts connected by clean interfaces.
+--esr, The Art of Unix Programming
+%
+Rule of Clarity: Clarity is better than cleverness.
+--esr, The Art of Unix Programming
+%
+Rule of Composition: Design programs to be connected to other programs.
+--esr, The Art of Unix Programming
+%
+Rule of Separation: Separate policy from mechanism; separate interfaces from engines.
+--esr, The Art of Unix Programming
+%
+Rule of Simplicity: Design for simplicity; add complexity only where you must.
+--esr, The Art of Unix Programming
+%
+Rule of Parsimony: Write a big program only when it is clear by demonstration
+that nothing else will do.
+--esr, The Art of Unix Programming
+%
+Rule of Transparency: Design for visibility to make inspection and debugging easier.
+--esr, The Art of Unix Programming
+%
+Rule of Robustness: Robustness is the child of transparency and simplicity.
+--esr, The Art of Unix Programming
+%
+Rule of Representation: Fold knowledge into data so program logic can be stupid
+and robust.
+--esr, The Art of Unix Programming
+%
+Rule of Least Surprise: In interface design, always do the least surprising
+thing. (aka Principle of Least Astonishment)
+--esr, The Art of Unix Programming
+%
+Rule of Silence: When a program has nothing surprising to say, it should say
+nothing.
+--esr, The Art of Unix Programming
+%
+Rule of Repair: When you must fail, fail noisily and as soon as possible.
+--esr, The Art of Unix Programming
+%
+Rule of Economy: Programmer time is expensive; conserve it in preference to
+machine time.
+--esr, The Art of Unix Programming
+%
+Rule of Generation: Avoid hand-hacking; write programs to write programs when
+you can.
+--esr, The Art of Unix Programming
+%
+Rule of Optimization: Prototype before polishing. Get it working before you
+optimize it.
+--esr, The Art of Unix Programming
+%
+Rule of Diversity: Distrust all claims for “one true way”.
+--esr, The Art of Unix Programming
+%
+Rule of Extensibility: Design for the future, because it will be here sooner
+than you think.
+--esr, The Art of Unix Programming
+%
+Controlling complexity is the essence of computer programming.
+--Brian Kernighan
+%
+There is no silver bullet.
+--Fred Brooks
+%
+There are two ways of constructing a software design: One way is to make it so
+simple that there are obviously no deficiencies, and the other way is to make it
+so complicated that there are no obvious deficiencies. The first method is far
+more difficult.
+--C.A.R Hoare, The Emperor's Old Clothes, CACM February 1981
+%
+Premature optimization is the root of all evil.
+--Donald Knuth
+%
+Never struggle to decipher subtle code three times. Once might be all one-shot
+fluke, but if you find yourself having to figure it out a second time — because
+the first was too long ago and you've forgotten details — it is time to comment
+the code so that the third time will be relatively painless [to refactor!]
+--Henry Spencer
+%
+A software system is transparent when you can look at it and immediately
+understand what it is doing and how. It is discoverable when it has facilities
+for monitoring and display of internal state so that your program not only
+functions well but can be seen to function well.
+--esr, The Art of Unix Programming
+%
+In evolving a design, you should actively seek ways to shift complexity from
+code to data.
+--esr, The Art of Unix Programming
+%
+I think that the terseness of Unix programs is a central feature of the style.
+If all displayed information is important, important information is easy to find.
+-- Ken Arnold
+%
+Design for generosity ("Be liberal in what you accept, and conservative in what
+you send.") rather than compensating for inadequate standards with permissive
+implementations.
+--Doug McIlroy, the inventor of Unix pipes
+%
+Make it run, then make it right, then make it fast.
+--Kent Beck, father of Extreme Programming
+%
+Prototype, polish, profile, then perfect.
+%
+One of my most productive days was throwing away 1000 lines of code.
+--Ken Thompson, designer and implementer of the first UNIX
+%
+Defect densities tend to be nearly constant across programming languages;
+[writing simple, clean code in a high-level language means] that whatever malign
+forces generate our bugs will get fewer lines to wreak their havoc on.
+--esr, The Art of Unix Programming
+%
+Beauty is the ultimate defense against complexity.
+--David Gelernter, Machine Beauty: Elegance and the Heart of Technology
+%
+On Keeping it DRY: Any time you see duplicate code, that's a danger sign.
+Complexity is a cost; don't pay it twice.
+--esr, The Art of Unix Programming
+%
+To design for compactness and orthogonality, start from zero.
+--esr, The Art of Unix Programming
+%
+If you know what you're doing, three layers is enough; if you don't, even
+seventeen levels won't help.
+--Michael Padlipsky, The Elements of Networking Style
+%
+Personally, I tend to break up a subprogram when there are too many local
+variables. Another clue is [too many] levels of indentation.
+--Ken Thompson, designer and implementer of the first UNIX
+%
+Agile Manifesto_____________
+   - Individuals and interactions over processes and tools
+   - Working software over comprehensive documentation
+   - Customer collaboration over contract negotiation
+   - Responding to change over following a plan
+
+    While there is value in the items on the right, we value the items on the
+    left more.
+%
+  Our highest priority is to satisfy the customer through early and continuous
+  delivery of valuable software.  -- Agile Manifesto
+%
+  Welcome changing requirements, even late in development. Agile processes
+  harness change for the customer's competitive advantage.  -- Agile Manifesto
+%
+  Deliver working software frequently, from a couple of weeks to a couple of
+  months, with a preference to the shorter timescale.  -- Agile Manifesto
+%
+  Business people and developers must work together daily throughout the
+  project.  -- Agile Manifesto
+%
+  Build projects around motivated individuals. Give them the environment and
+  support they need, and trust them to get the job done.  -- Agile Manifesto
+%
+  The most efficient and effective method of conveying information to and within
+  a development team is face-to-face conversation.  -- Agile Manifesto
+%
+  Working software is the primary measure of progress.
+%
+  Agile processes promote sustainable development. The sponsors, developers, and
+  users should be able to maintain a constant pace indefinitely.  -- Agile Manifesto
+%
+  Continuous attention to technical excellence and good design enhances agility.  -- Agile Manifesto
+%
+  Simplicity--the art of maximizing the amount of work not done--is essential.
+%
+  The best architectures, requirements, and designs emerge from self-
+  organizing teams.
+%
+  At regular intervals, the team reflects on how to become more effective, then
+  tunes and adjusts its behavior accordingly.  -- Agile Manifesto
+%
+  "When you don't create things, you become defined by your tastes rather than
+  ability. Your tastes only narrow and exclude people. So create." -- why the lucky stiff
+%
+  Don't just operate, create!
+%
+  A good question is never answered. It is not a bolt to be tightened into
+  place but a seed to be planted and to bear more seed toward the hope of
+  greening the landscape of idea.  —- John Ciardi

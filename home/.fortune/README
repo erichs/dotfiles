@@ -1,0 +1,13 @@
+This directory is used by the 'fortune' program to display custom quotes when we log into UNIX boxen.
+Feel free to edit the .txt files to add quotes, or start a new .txt file if you'd like to create
+a new category or grouping of quotes, sayings, maxims, or thoughts.  Each quote in the file
+must be followed by a literal % on its own line, like this:
+
+first quote
+%
+second quote
+%
+final quote
+
+Finally, after editing the .txt file(s), run 'make' to generate the binary .dat file used
+by fortune.
