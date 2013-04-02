@@ -269,3 +269,133 @@ Avoid mixing object creation with application logic. -- Misko Hevery
 "Plans are worthless, planning is invaluable."- Sir Winston Churchill
 %
 Your architecture should resemble your domain. -- Uncle Bob Martin, "Screaming Architecture"
+%
+Naming Types(Classes, Interfaces, Structs)
+
+The name should be a noun phrase.
+
+   Bad: Happy
+  Good: Happiness
+%
+Naming Types(Classes, Interfaces, Structs)
+
+Do not use namespace-like prefixes. That's what namespaces are for.
+
+   Bad: SystemOnlineMessage
+  Good: System::Online::Message
+%
+Naming Types(Classes, Interfaces, Structs)
+
+Use just enough adjectives to be clear.
+
+   Bad: IAbstractFactoryPatternBase
+  Good: IFactory
+%
+Naming Types(Classes, Interfaces, Structs)
+
+Do not use 'Manager' or 'Helper' or other null words in a type name.
+Types should manage and help themselves.
+
+   Bad: ConnectionManager
+        XmlHelper
+  Good: Connection
+        XmlDocument, XmlNode, etc.
+%
+Naming Types(Classes, Interfaces, Structs)
+
+If a class doesn't represent something easily comprehensible, consider a concrete metaphor.
+
+   Bad: IncomingMessageQueue
+        CharacterArray
+        SpatialOrganizer
+  Good: Mailbox
+        String
+        Map
+%
+Naming Types(Classes, Interfaces, Structs)
+
+If you use a metaphor, use it consistently.
+
+   Bad: Mailbox, DestinationID
+  Good: Mailbox, Address
+%
+Naming Functions (Methods, Procedures)
+
+Be terse.
+
+   Bad: list.GetNumberOfItems();
+  Good: list.Count();
+%
+Naming Functions (Methods, Procedures)
+
+Don't be too terse.
+
+   Bad: list.Verify();
+  Good: list.ContainsNull();
+%
+Naming Functions (Methods, Procedures)
+
+Avd abbrvtn.
+
+   Bad: list.Srt();
+  Good: list.Sort();
+%
+Naming Functions (Methods, Procedures)
+
+Name 'command' functions that do things using verbs.
+
+   Bad: obj.RefCount();
+  Good: list.Clear();
+        list.Sort();
+        obj.AddReference();
+%
+Naming Functions (Methods, Procedures)
+
+Name functions that return a boolean like questions.
+
+   Bad: list.Empty();
+  Good: list.IsEmpty();
+        list.Contains(item);
+%
+Naming Functions (Methods, Procedures)
+
+Name 'query' functions that don't change state using nouns.
+
+   Bad: list.GetCount();
+  Good: list.Count();
+%
+Naming Functions (Methods, Procedures)
+
+Don't make the name redundant with an argument.
+
+   Bad: list.AddItem(item);
+        handler.ReceiveMessage(msg);
+  Good: list.Add(item);
+        handler.Receive(msg);
+%
+Naming Functions (Methods, Procedures)
+
+Don't make the name redundant with the receiver.
+
+   Bad: list.AddToList(item);
+  Good: list.Add(item);
+%
+Naming Functions (Methods, Procedures)
+
+Only describe the return in the name if there are identical functions that return different types.
+
+   Bad: list.GetCountInt();
+  Good: list.GetCount();
+        message.GetIntValue();
+        message.GetFloatValue();
+%
+Naming Functions (Methods, Procedures)
+
+Don't use 'And' or 'Or' in a function name.
+
+Break into smaller pieces, seek an intention-revealing synthesis, or use
+encapsulation.
+
+   Bad: mail.VerifyAddressAndSendStatus();
+  Good: mail.VerifyAddress();
+        mail.SendStatus();
