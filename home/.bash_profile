@@ -7,3 +7,5 @@ files=$(ls ~/.profile.d/*.sh \
 for file in $files; do
     source $file
 done
+
+fortune ~/.fortune/*.txt
