@@ -74,7 +74,7 @@ _set_up_prompt() {
         *) c_user="${VIOLET}" ;;
     esac
     typeset c_host
-    c_host="${GREEN}" ;;
+    c_host="${GREEN}"
 
     typeset _title='\[\e]0;\u@\h \w\007\]'
     typeset _host="$c_user\\u${RESET}$c_host@\\h${RESET}"
