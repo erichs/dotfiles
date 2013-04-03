@@ -1,0 +1,205 @@
+"abductive inference"|"abductive logic"|"abductive reasoning"
+advaita|vedanta
+ambigram
+anaglyph
+anarchism|anarchy|anarchocommunism|anarchocapitalism
+"anthropic principle"
+anticryptography
+"appropriate technology"
+"resilient community"
+"new tribalism"
+autodidact
+blissymbolics
+buddhism
+"card game system"
+"cognitive ergonomics"
+"common lisp"
+"construction toy"
+"construction toy system"
+"constructive living"
+cosmology
+"curta calculator"
+"deep time"
+diy
+"douglas hofstadter"
+vim
+"ergodic literature"
+esolang|"esoteric language"
+"evolutionary psychology"
+exoself
+"experimental mathematics"|"experimental math"
+"faster than light"|ftl
+"free culture"
+"free software"
+"game design"
+games
+"game systems"
+gedankenexperiment|"thought experiment"
+"general semantics"
+"general systems theory"
+geocaching
+geometry
+geomancy
+kybalion
+"vedic mathematics"
+"number circle"
+"casting out nines"
+"kuji kiri"
+ninjutsu
+ninpo
+taijutsu
+hojojutsu
+"tendai buddhism"
+"modulo 9"
+"modular arithmetic"
+origami
+glasperlenspiel|"glass bead game"|gbg
+"global catastrophic risks"
+gnosticism
+druidism
+"perennial philosophy"
+"aldous huxley"
+"headless way"|headlessness
+"hipster pda"
+"history of science"|"history of mathematics"
+hypnagogia|hypnagogic
+icehouse
+"inform 7"
+"interactive fiction"|"text adventure"
+kaizen
+kennings
+"king in yellow"
+k"nex|knex
+korzybski
+labyrinth|maze
+"laws of form"|"spencer brown"
+lego
+letterboxing
+"lewis carroll"
+"life hack"|lifehack
+linux
+lisp
+"literate programming"
+logic
+"logic alphabet"
+loglan|lojban
+"long now"
+lovecraft|hpl|"cthulhu mythos"
+"low tech"
+"lucid dream"
+ludism
+ludology
+madhyamika
+"maker movement"|"make magazine"
+manifesto
+"many valued logic"|"multi valued logic"|"multivalued logic"
+"many worlds"|"many worlds interpretation"
+"martin gardner"
+"math fiction"
+meditation
+shamatha
+vipassana
+memes|memetics
+"memory palace"
+"mental math"|"mental arithmetic"|"mental mathematics"
+mentat
+metagame|metagaming
+micronation
+"mind performance hacks"|mindhacker
+mnemonic
+"monty python"
+moopsball
+"morita therapy"
+"morton"s list"
+multiverse
++murse
+mythtv|knoppmyth
+naikan
+nanofiction
+neurodiversity
+nomic
+nootropic
+notation
+notetaking|annotation
+"omega point"
+"open source"
+oulipo|"georges perec"
+panenpsychism
+"paper craft"|papercraft
+paradox
+pataphysics
+"pattern language"
+"philosophy of science"|"philosophy of mathematics"
++piecepack
+planiverse|flatland
+polyform|polyomino
+"positive psychology"
+"positive revolution"
+"public radio"
+"public television"
+quenya|sindarin|elvish|tengwar
+"rainbow deck"
+"r a lafferty"
+ramagon
+"raymond smullyan"
+rebt|"rational emotive behavior therapy"|"albert ellis"|"cognitive behavior therapy"|cbt
+retrocomputing
+"robert anton wilson"
+robotics
+"rudy rucker"
+rwhe
+savant
+"science fiction"
+"self reference"
+"sentience quotient"
+seti
+"sherlock holmes"
+"sid sackson"
+singularity
+solipsism
+solresol
+speedwords
+spime
+"stanislaw lem"
+"stephen colbert"|"colbert report"
+stoicism
+"strange loop"
+superhero
+synergetics|"buckminster fuller"
+synesthesia
+"systems theory"
+"ted chiang"
+teilhard
+"they might be giants"|tmbg
+tolkien
+"toy system"
+transhumanism
+turing
+uberstix
+ubicomp
+"ubiquitous computing"
+"wold newton"
+writing
+zome|zometool
+github
+git
+ruby|cucumber
+enneagram
+enneagon
+"sacred geometry"
+"tiddly wiki"
+"table saw"
+"drill press"
+"woodworking"
+"da vinci"
+"rennaissance man"
+paracord
+survival
+rationality
+symbel
+sumble
+"martin fowler"
+"stephen k hayes"
+"butler shaffer"
+"john taylor gatto"
+"robert lang"
