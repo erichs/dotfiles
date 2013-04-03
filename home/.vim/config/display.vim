@@ -20,8 +20,6 @@ if has('statusline')
   set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file
 endif
 
-" Always display line numbers
-set number
 " Display coordinates in the status bar
 set ruler
 " Display unfinished commands in the status bar
