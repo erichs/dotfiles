@@ -1,0 +1,75 @@
+[user]
+	name = Erich Smith
+  email = heartquest@gmail.com
+[color]
+	ui = 1
+[color "diff"]
+  meta = yellow bold
+  frag = white bold
+  old = red
+  new = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[format]
+  pretty = format:%C(yellow)%h%Creset %s [%ar]
+  diffstat = true
+[branch]
+  autosetuprebase = always
+  autosetupmerge = always
+[alias]
+  pending = "!sh -c 'git remote update >/dev/null 2>&1  && git l HEAD..origin/master'"
+  hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(red)(%cr) %C(bold blue) [%an]'
+  undo = reset --hard HEAD~1
+  # Usage: git whois "name or email fragment"
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+  # Usage: git whatis SHA
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  debug = !GIT_PAGER= gdb --args git
+  # Usage: git funcdiff <old-rev> <new-rev> <path> <function>
+  funcdiff = !sh -c \"git show \\\"\\$1:\\$3\\\" | sed -n \\\"/^[^ \\t].*\\$4(/,/^}/p\\\" > .tmp1 &&\n        git show \\\"\\$2:\\$3\\\" | sed -n \\\"/^[^ \\t].*\\$4(/,/^}/p\\\" > .tmp2 &&\n        git diff --no-index .tmp1 .tmp2\"
+  st = status
+  finish = !git flowcmd finish
+  publish = !git flowcmd publish
+  co = checkout
+  # log with train tracks...
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  # Alternate log display from Scott Chacon
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # Other useful aliases:
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+  # Usage: git track origin/feature-123-login-form
+  track = checkout -t
+  # Usage:
+  # $ git edit-unmerged
+  # ... edit ...
+  # $ ... test ...
+  # $ git add-unmerged
+  # $ git commit  # or git rebase --continue or whatever
+  edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
+  add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
+[apply]
+  whitespace = warn
+[color]
+  branch = auto
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[push]
+  # Only push branches that have been set up to track a remote branch.
+  default = current
+[commit]
+  template = ~/.gitcommitmessage.txt
+[merge]
+  tool = "p4merge"
+[mergetool]
+  summary = true
+  keepBackup = false
+[diff]
+  external = p4diff
+[rerere]
+	enabled = 1
