@@ -1,1 +1,1 @@
-alias ii='~/bin/ii.py ~/bin/obsessions.txt'
+alias ii='~/bin/ii.py ~/.fortune/obsessions.list'
