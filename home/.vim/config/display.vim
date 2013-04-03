@@ -43,7 +43,4 @@ au InsertLeave * match ExtraWhiteSpace /\S\zs\s\+$/
 set encoding=utf-8 " Necessary to show unicode glyphs
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
 
-set lazyredraw      " speeds up macros, use <ctrl>-l to refresh screen as needed
-
-au BufWinLeave * silent! mkview   " make vim save view state
-au BufWinEnter * silent! loadview " make vim load view state
+set lazyredraw      " speeds up macros
