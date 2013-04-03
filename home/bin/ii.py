@@ -25,7 +25,7 @@ nargs = len(sys.argv)
 
 random.seed()
 
-obf = open("/Users/esmith/bin/obsessions.txt", "r")
+obf = open("~/bin/obsessions.txt", "r")
 obsessions = obf.readlines()
 maxobs = len(obsessions)
 
