@@ -8,6 +8,8 @@ map ()
     example 'list {5..1} | map countdown   # displays countdown'
     example 'or, equivalently:'
     example "list {5..1} | map lambda count . 'echo T-minus: \$count' "
+    group 'functional'
+
     while read x; do
         echo $x | $@;
     done

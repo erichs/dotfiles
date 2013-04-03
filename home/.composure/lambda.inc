@@ -4,6 +4,7 @@ lambda ()
     param '1: optional lambda arguments, followed by a period or colon'
     param '2: code for function body'
     example 'ls -l | awk "{print \\$5}" | map lambda a : "echo bytes: \\$a" '
+    group 'functional'
 
     function lam ()
     {

@@ -5,6 +5,7 @@ reduce ()
     param 'function or block of code to accumulate over inputs'
     example 'sum all even numbers in input list:'
     example "list {0..50} | reduce lambda a b . 'if [ \$((\$b % 2)) -eq 0 ]; then echo \$((\$a + \$b)); else echo $a; fi'"
+    group 'functional'
 
     f="$@";
     read acc;

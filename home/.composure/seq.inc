@@ -4,6 +4,7 @@ seq ()
     param '1: start of sequence'
     param '2: end of sequence'
     example '$ seq 1 10'
+    group 'shell'
 
     if [ -n "$(which seq)" ]; then
         echo 'calling built-in'
