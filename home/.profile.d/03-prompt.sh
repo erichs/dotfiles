@@ -1,6 +1,7 @@
-# bashprompt.inc: load colorized, context-sensitive prompt
+# prompt.sh: load colorized, context-sensitive prompt
 # eas, 1/2011: initial code
-#       2/2012: rewritten for speed, added dingbats for RC and dirty flag
+#      2/2012: rewritten for speed, added dingbats for RC and dirty flag
+#      4/2013: remove jobs listing, incompatible with fasd
 # vim: ft=sh
 
 if [ "$(which git)" == "" ]; then
@@ -51,12 +52,6 @@ if [[ $GIT_REPO_PATH != '' && $GIT_REPO_PATH != '~' && $GIT_REPO_PATH != "$HOME/
 fi
 }
 
-jobs_prompt() {
-    if [ -n "`jobs`" ]; then
-        jobs
-    fi
-}
-
 rc_prompt() {
     if [ $? == 0 ]
     then
@@ -96,11 +91,10 @@ _set_up_prompt() {
     # interpreted anew by the shell each time the
     # prompt is rendered
     typeset _gitinfo="${GREEN}\$(git_prompt)${RESET}"
-    typeset _jobinfo="${RED}\$(jobs_prompt)${RESET}"
 
     PS1="$_autotitle$_title
 \$(rc_prompt) $_host $_cwd$_shlvl
-$_gitinfo $_jobinfo
+$_gitinfo
 $_main"
     PS2='> '
     PS4='+ '
