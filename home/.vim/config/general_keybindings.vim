@@ -21,19 +21,6 @@ map <Leader>Q :qa!<CR>
 " issuing 'w!!' will force a sudo save...
 cmap w!! %!sudo tee > /dev/null %
 
-""" Navigation
-""""""""""""""
-" Keybinds for moving about in vim buffers/windows.
-
-" <Leader>h moves to the window to the left of the current window,
-" <Leader>j moves to the window below the current window,
-" <Leader>k moves to the window above the current window, and
-" <Leader>l moves to the window to the right of the current window.
-map <Leader>h <C-W>h
-map <Leader>j <C-W>j
-map <Leader>k <C-W>k
-map <Leader>l <C-W>l
-
 " navigate buffers and tabs
 map <down> <ESC>:bn<RETURN>
 map <up> <ESC>:bp<RETURN>
