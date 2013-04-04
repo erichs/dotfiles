@@ -5,7 +5,7 @@ add_interest ()
   example '$ add_interest winetasting'
   group 'shell'
 
-  echo "$*" >> ~/.fortune/interests.list
+  echo "\"$*\"" >> ~/.fortune/interests.list
   (
     cd ~/.fortune
     git add interests.list
