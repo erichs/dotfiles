@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+branch=$(git name-rev --name-only HEAD 2>/dev/null)  # use plumbing command to find current branch
+if [ -z "$branch" ]; then
+  echo "Not a git branch!"
+  exit 2
+else
+  if [[ ! "$branch" =~ "/" ]]; then
+    echo "Not on a git flow branch.  e.g. use git checkout hotfix/myfix"
+    exit 2
+  else
+    # parse git flow subcommand and branch...
+    subc=$(echo $branch | sed -e 's#\(.*\)/\(.*\)#\1#')
+    leaf=$(echo $branch | sed -e 's#\(.*\)/\(.*\)#\2#')
+    git flow $subc $1 $leaf
+  fi
+fi
+echo 'done'
