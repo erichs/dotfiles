@@ -6,7 +6,7 @@ Strengths lead to weaknesses.
 A great VISION is inspiring, sound, documented and communicated.
 --Ari Weinzweig, lapsed anarchist and founder of Zingerman's
 %
-Winners to what others know they should do, but often don't.
+Winners do what others know they should do, but often don't.
 --Ari Weinzweig, lapsed anarchist and founder of Zingerman's
 %
 To get to greatness you've got to keep getting better. All the time!
@@ -216,39 +216,49 @@ Agile Manifesto_____________
     left more.
 %
 Our highest priority is to satisfy the customer through early and continuous
-delivery of valuable software.  -- Agile Manifesto
+delivery of valuable software.
+-- Agile Manifesto
 %
 Welcome changing requirements, even late in development. Agile processes
-harness change for the customer's competitive advantage.  -- Agile Manifesto
+harness change for the customer's competitive advantage.
+-- Agile Manifesto
 %
 Deliver working software frequently, from a couple of weeks to a couple of
-months, with a preference to the shorter timescale.  -- Agile Manifesto
+months, with a preference to the shorter timescale.
+-- Agile Manifesto
 %
 Business people and developers must work together daily throughout the
-project.  -- Agile Manifesto
+project.
+-- Agile Manifesto
 %
 Build projects around motivated individuals. Give them the environment and
-support they need, and trust them to get the job done.  -- Agile Manifesto
+support they need, and trust them to get the job done.
+-- Agile Manifesto
 %
 The most efficient and effective method of conveying information to and within
-a development team is face-to-face conversation.  -- Agile Manifesto
+a development team is face-to-face conversation.
+-- Agile Manifesto
 %
 Working software is the primary measure of progress.
 %
 Agile processes promote sustainable development. The sponsors, developers, and
-users should be able to maintain a constant pace indefinitely.  -- Agile Manifesto
+users should be able to maintain a constant pace indefinitely.
+-- Agile Manifesto
 %
-Continuous attention to technical excellence and good design enhances agility.  -- Agile Manifesto
+Continuous attention to technical excellence and good design enhances agility.
+-- Agile Manifesto
 %
 Simplicity--the art of maximizing the amount of work not done--is essential.
 %
 The best architectures, requirements, and designs emerge from self-organizing teams.
 %
 At regular intervals, the team reflects on how to become more effective, then
-tunes and adjusts its behavior accordingly.  -- Agile Manifesto
+tunes and adjusts its behavior accordingly.
+-- Agile Manifesto
 %
 "When you don't create things, you become defined by your tastes rather than
-ability. Your tastes only narrow and exclude people. So create." -- why the lucky stiff
+ability. Your tastes only narrow and exclude people. So create."
+-- why the lucky stiff
 %
 Don't just operate, create!
 %
@@ -261,14 +271,16 @@ Accept that you have no idea how this will grow...
 The key is to acknowledge from the start that you have no idea how this will
 grow. When you accept that you don't know everything, you begin to design the
 system defensively... You should spend most of your time thinking about
-interfaces rather than implementations.  -- Nicholas Zakas, author
-'High-performance JavaScript websites'
+interfaces rather than implementations.
+-- Nicholas Zakas, author 'High-performance JavaScript websites'
 %
-Avoid mixing object creation with application logic. -- Misko Hevery
+Avoid mixing object creation with application logic.
+-- Misko Hevery
 %
 "Plans are worthless, planning is invaluable."- Sir Winston Churchill
 %
-Your architecture should resemble your domain. -- Uncle Bob Martin, "Screaming Architecture"
+Your architecture should resemble your domain.
+-- Uncle Bob Martin, "Screaming Architecture"
 %
 Naming Types(Classes, Interfaces, Structs)
 
@@ -399,3 +411,25 @@ encapsulation.
    Bad: mail.VerifyAddressAndSendStatus();
   Good: mail.VerifyAddress();
         mail.SendStatus();
+%
+  Design is more the art of preserving changeability
+  than it is the act of achieving perfection.
+  -- Sandi Metz
+%
+  Code should be TRUE: Transparent, Reasonable, Usable, and Exemplary.
+  -- Sandi Metz
+%
+  Depend on things that change less often than you do.
+  -- Sandi Metz
+%
+  The general rule for refactoring into a new inheritance hierarchy is to
+  arrange code so that you can promote abstractions rather than demote
+  concretions.
+  -- Sandi Metz
+%
+  An understanding of object-oriented design, good refactoring skills, and the
+  ability to write efficient tests form a three-legged stool upon which
+  changeable code rests. Well-designed code is easy to change, refactoring is
+  how you change from one design to the next, and tests free you to refactor
+  with impunity.
+  -- Sandi Metz
