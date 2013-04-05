@@ -150,7 +150,7 @@ more difficult.
 Premature optimization is the root of all evil.
 --Donald Knuth
 %
-Never struggle to decipher subtle code three times. Once might be all one-shot
+Never struggle to decipher subtle code three times. Once might be a one-shot
 fluke, but if you find yourself having to figure it out a second time — because
 the first was too long ago and you've forgotten details — it is time to comment
 the code so that the third time will be relatively painless [to refactor!]
@@ -416,7 +416,13 @@ encapsulation.
   than it is the act of achieving perfection.
   -- Sandi Metz
 %
-  Code should be TRUE: Transparent, Reasonable, Usable, and Exemplary.
+  You will know when to stop coding when code is TRUE:
+
+  Transparent: consequences of change are visible and predictable
+  Reasonable: cost of a new feature should be proportional to its value
+  Usable: can it easily be reused somewhere else?
+  Exemplary: is it good or do your coworkers hate you?
+
   -- Sandi Metz
 %
   Depend on things that change less often than you do.
@@ -433,3 +439,16 @@ encapsulation.
   how you change from one design to the next, and tests free you to refactor
   with impunity.
   -- Sandi Metz
+%
+  Practical design doesn’t try to guess the future. It preserves your options
+  for accommodating the future.
+  -- Sandi Metz
+%
+  The purpose of design is to reduce the cost of change.
+  -- Sandi Metz
+%
+  When you refactor your code to add abstractions, just do one refactor
+  less than you want to. And there will be the perfect balance between
+  abstraction for easy change and functional code for easy understanding.
+  --Sandi Metz
+
