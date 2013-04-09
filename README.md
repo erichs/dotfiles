@@ -8,8 +8,8 @@ first.
 Once you've got basic tools installed, try:
 
 ```bash
-$ curl -L git.io/homeshick | sh
-$ ~/.homeshick clone erichs/dotfiles
-$ ~/.homeshick link dotfiles
+curl -L git.io/homeshick | sh
+~/.homeshick clone erichs/dotfiles
+~/.homeshick link dotfiles
 ```
 
