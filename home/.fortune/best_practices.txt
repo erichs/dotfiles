@@ -451,4 +451,3 @@ encapsulation.
   less than you want to. And there will be the perfect balance between
   abstraction for easy change and functional code for easy understanding.
   --Sandi Metz
-
