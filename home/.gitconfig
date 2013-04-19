@@ -73,3 +73,5 @@
   external = p4diff
 [rerere]
 	enabled = 1
+[core]
+	editor = /usr/bin/vim -f
