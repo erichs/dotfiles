@@ -9,3 +9,4 @@ for file in $files; do
 done
 
 fortune ~/.fortune/*.txt
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
