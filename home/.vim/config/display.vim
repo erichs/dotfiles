@@ -4,7 +4,7 @@ syntax enable
 " Use a dark background, because that's what cool people do, I'm told
 set background=dark
 " Use solarized
-colorscheme solarized
+colorscheme railscasts
 
 " Status bar stuff
 if has('statusline')
