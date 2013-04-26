@@ -26,8 +26,6 @@ set autoread
 set wrap
 " try not to wrap in the middle of a word
 set linebreak
-" use an 80-character line limit
-set textwidth=80
 
 " format settings
 " t - Auto-wrap text using textwidth
