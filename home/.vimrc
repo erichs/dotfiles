@@ -10,3 +10,4 @@ runtime! config/**/*
 
 filetype on
 filetype off
+filetype on
