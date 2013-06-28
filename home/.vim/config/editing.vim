@@ -51,3 +51,6 @@ runtime! macros/matchit.vim
 " visual shifting (does not exit Visual mode)
 vnoremap < <gv
 vnoremap > >gv
+
+" support yank to osx clipboard
+set clipboard=unnamed

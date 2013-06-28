@@ -16,8 +16,7 @@
   pretty = format:%C(yellow)%h%Creset %s [%ar]
   diffstat = true
 [branch]
-  autosetuprebase = always
-  autosetupmerge = always
+	autosetuprebase = always
 [alias]
   pending = "!sh -c 'git remote update >/dev/null 2>&1  && git l HEAD..origin/master'"
   hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(red)(%cr) %C(bold blue) [%an]'
@@ -64,8 +63,6 @@
   default = current
 [commit]
   template = ~/.gitcommitmessage.txt
-[merge]
-  tool = "p4merge"
 [mergetool]
   summary = true
   keepBackup = false
@@ -73,3 +70,7 @@
 	enabled = 1
 [core]
 	editor = /usr/bin/vim -f
+	excludesfile = ~/.gitignore
+[github]
+	user = erichs
+	token = 17e0a3d3ec802b0cd471001796afba0f68f5c410
