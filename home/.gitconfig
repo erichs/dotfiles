@@ -33,7 +33,7 @@
   publish = !git flowcmd publish
   co = checkout
   # log with train tracks...
-  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  l = !GIT_PAGER= git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
   # Alternate log display from Scott Chacon
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   # Other useful aliases:

@@ -12,3 +12,15 @@ filetype plugin indent on
 " differentiate them from 3rd-party libraries.
 runtime! config/**/*
 set clipboard=unnamed
+
+set rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
+
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
+
+nmap <Plug>IgnoreMarkSearchNext <Plug>MarkSearchNext
+nmap <Plug>IgnoreMarkSearchPrev <Plug>MarkSearchPrev
+nmap <F8> :TagbarToggle<CR>

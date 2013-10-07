@@ -1,0 +1,78 @@
+#!/usr/bin/env ruby
+
+class Practice
+  def initialize
+    @data = {}
+    try_to_load_data
+  end
+
+  def record_today(minutes)
+    @data[key_for(Time.now)] = minutes
+  end
+
+  def write_data_to_file!
+    File.open(data_file, 'w') do |f|
+      @data.keys.sort.each do |key|
+        f.write("#{key}|#{@data[key]}\n")
+      end
+    end
+  end
+
+  def data_points
+    today = Time.now
+    points = [minutes_for(today)]
+
+    1.upto(days_to_show - 1) do |offset|
+      points.unshift(minutes_for(today - (offset * 86400)))
+    end
+
+    points
+  end
+
+private
+
+  def minutes_for(date)
+    @data[key_for(date)] || 0
+  end
+
+  def days_to_show
+    (ENV['PRACTICE_DAYS'] || 14).to_i
+  end
+
+  def data_file
+    ENV['PRACTICE_DATA'] || "#{ENV['HOME']}/.practice"
+  end
+
+  def key_for(date)
+    date.strftime(date_format)
+  end
+
+  def date_format
+    "%d-%m-%Y"  # 31-02-2013
+  end
+
+  def try_to_load_data
+    return unless File.exist?(data_file)
+
+    File.open(data_file, 'r').each_line do |line|
+      date, minutes = line.split('|')
+      @data[date] = minutes.to_i
+    end
+  end
+end
+
+practice = Practice.new
+
+if ARGV.empty?
+  puts practice.data_points.join(' ')
+else
+  case ARGV.first
+  when 'record'
+    minutes = ARGV[1].to_i
+
+    practice.record_today(minutes)
+    practice.write_data_to_file!
+
+    puts "Recorded #{minutes} minutes for today."
+  end
+end

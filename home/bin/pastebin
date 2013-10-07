@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# Red Hat pastebin tool, based on Fedora Unity pastebin tool
+
+PB_URL="http://pastebin.test.redhat.com/pastebin.php"
+
+if [ ! -e /usr/bin/curl ]; then
+ echo "Curl is not installed, please yum install curl"
+ exit
+fi
+
+if [ -e "$1" ] || [ "$1" == "-" ]; then
+ OUTPUT="$(cat $1)"
+
+ FILE_TYPE=`echo "$OUTPUT" | file - | cut -d ":" -f 2`
+ case $FILE_TYPE in
+    *shell*)    format="bash";;
+    *XML*)      format="xml";;
+    *diff*)     format="diff";;
+    *C++*)      format="cpp";;
+    *C\ program*) format="c";;
+    *PHP*)      format="php";;
+    *python*)   format="python";;
+    *)         format="text";;
+ esac
+ 
+ echo "$OUTPUT" | curl -s -L -i -F 'code2=<-' -F "format=$format" -F 'paste=Send' ${PB_URL} | grep -m 1 "Location:" | cut -f 2 -d " "
+elif [ "$1" == "-f" ] && [ -n "$2" ] ; then
+ curl -s -L "${PB_URL}?dl=$2" 
+else
+ echo Usage: $0 filename_to_paste.txt
+ echo "       cat foo.txt | $0"
+ echo 
+ echo " fetch: $0 -f 123456 | less"
+fi
